@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a9cf1f314a7a841c7d75862e0a618b4b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a9cf1f314a7a841c7d75862e0a618b4b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a9cf1f314a7a841c7d75862e0a618b4b = L.map(
+                "map_a9cf1f314a7a841c7d75862e0a618b4b",
+                {
+                    center: [40.4165, -3.702556],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_be7f9c7b088b9b5d6dbdeb39937e12d6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_be7f9c7b088b9b5d6dbdeb39937e12d6.addTo(map_a9cf1f314a7a841c7d75862e0a618b4b);
+        
+    
+            var feature_group_a5a78325a84646bcd4f1ff511cab1aa2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_ef8e58f6fc49a93a0b098e4ca8775d0c = L.marker(
+                [40.421806, -3.72475],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_38090a798833a201439e2dc664a1fd20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3d2931518ba40994f9322c2f2ad5fdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7053518d4929c348384709c8d019a0d2 = $(`<div id="html_7053518d4929c348384709c8d019a0d2" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_d3d2931518ba40994f9322c2f2ad5fdf.setContent(html_7053518d4929c348384709c8d019a0d2);
+            
+        
+
+        marker_ef8e58f6fc49a93a0b098e4ca8775d0c.bindPopup(popup_d3d2931518ba40994f9322c2f2ad5fdf)
+        ;
+
+        
+    
+    
+                marker_ef8e58f6fc49a93a0b098e4ca8775d0c.setIcon(icon_38090a798833a201439e2dc664a1fd20);
+            
+    
+            var marker_f1275753c515d12fbfd1bb17fabd43df = L.marker(
+                [40.421806, -3.708306],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_d11ebc071c94399f064fe906aaf2992b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b8a7556a0f7276b76d97fc5bd368afe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e12c5cfba357714a8f237be3a9ddf8fb = $(`<div id="html_e12c5cfba357714a8f237be3a9ddf8fb" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_9b8a7556a0f7276b76d97fc5bd368afe.setContent(html_e12c5cfba357714a8f237be3a9ddf8fb);
+            
+        
+
+        marker_f1275753c515d12fbfd1bb17fabd43df.bindPopup(popup_9b8a7556a0f7276b76d97fc5bd368afe)
+        ;
+
+        
+    
+    
+                marker_f1275753c515d12fbfd1bb17fabd43df.setIcon(icon_d11ebc071c94399f064fe906aaf2992b);
+            
+    
+            var marker_99de987eb10700964c07c2a85f828e76 = L.marker(
+                [40.387972, -3.653083],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_d7f4f62ed8638df245fd1f58cdae3025 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2a6b6b7c9428d4a276d29ab94017b806 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_948d4e937a7ae50788feb0af8dc01dac = $(`<div id="html_948d4e937a7ae50788feb0af8dc01dac" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_2a6b6b7c9428d4a276d29ab94017b806.setContent(html_948d4e937a7ae50788feb0af8dc01dac);
+            
+        
+
+        marker_99de987eb10700964c07c2a85f828e76.bindPopup(popup_2a6b6b7c9428d4a276d29ab94017b806)
+        ;
+
+        
+    
+    
+                marker_99de987eb10700964c07c2a85f828e76.setIcon(icon_d7f4f62ed8638df245fd1f58cdae3025);
+            
+    
+            var marker_2dfa7e81c1330640379a4ad71fd774a0 = L.marker(
+                [40.408611, -3.647167],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_c57196499c8edb9f2340e52250f69c50 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_648e720eb74fd51f962cf2ed0d0ec487 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0d05f6f5156e8f269384a9d0acebdd5 = $(`<div id="html_d0d05f6f5156e8f269384a9d0acebdd5" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_648e720eb74fd51f962cf2ed0d0ec487.setContent(html_d0d05f6f5156e8f269384a9d0acebdd5);
+            
+        
+
+        marker_2dfa7e81c1330640379a4ad71fd774a0.bindPopup(popup_648e720eb74fd51f962cf2ed0d0ec487)
+        ;
+
+        
+    
+    
+                marker_2dfa7e81c1330640379a4ad71fd774a0.setIcon(icon_c57196499c8edb9f2340e52250f69c50);
+            
+    
+            var marker_2cb7cbe81e76cca598d3eca7293076a9 = L.marker(
+                [40.421139, -3.683389],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_2057342eee45c3187b11bcb3308f0430 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bade966672ccfaa2f77f26f5d0d31eb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_347fea2d88aed49881e3b711b90ecaf8 = $(`<div id="html_347fea2d88aed49881e3b711b90ecaf8" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_bade966672ccfaa2f77f26f5d0d31eb6.setContent(html_347fea2d88aed49881e3b711b90ecaf8);
+            
+        
+
+        marker_2cb7cbe81e76cca598d3eca7293076a9.bindPopup(popup_bade966672ccfaa2f77f26f5d0d31eb6)
+        ;
+
+        
+    
+    
+                marker_2cb7cbe81e76cca598d3eca7293076a9.setIcon(icon_2057342eee45c3187b11bcb3308f0430);
+            
+    
+            var marker_2fb974e7eb42c9edca7e847a4b66764f = L.marker(
+                [40.395417, -3.738278],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_c71d77bc77630e112aee8df0774ef807 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95a91cfeee3bb6544bff494af9c73f28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d56196a6148d511435ce030ef48335f2 = $(`<div id="html_d56196a6148d511435ce030ef48335f2" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_95a91cfeee3bb6544bff494af9c73f28.setContent(html_d56196a6148d511435ce030ef48335f2);
+            
+        
+
+        marker_2fb974e7eb42c9edca7e847a4b66764f.bindPopup(popup_95a91cfeee3bb6544bff494af9c73f28)
+        ;
+
+        
+    
+    
+                marker_2fb974e7eb42c9edca7e847a4b66764f.setIcon(icon_c71d77bc77630e112aee8df0774ef807);
+            
+    
+            var marker_8472a61a12944e827ce6fd734846d2d8 = L.marker(
+                [40.385611, -3.724972],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_c68e4fca3d4a40a8f291602e2fc78fd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52f22d9f2e325915bc069f8c9496c260 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_397a0c55db43ad948a6cb100da255167 = $(`<div id="html_397a0c55db43ad948a6cb100da255167" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_52f22d9f2e325915bc069f8c9496c260.setContent(html_397a0c55db43ad948a6cb100da255167);
+            
+        
+
+        marker_8472a61a12944e827ce6fd734846d2d8.bindPopup(popup_52f22d9f2e325915bc069f8c9496c260)
+        ;
+
+        
+    
+    
+                marker_8472a61a12944e827ce6fd734846d2d8.setIcon(icon_c68e4fca3d4a40a8f291602e2fc78fd6);
+            
+    
+            var marker_cce9c2361d50500025e017f113a1a9b9 = L.marker(
+                [40.371417, -3.608194],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_95b644308f67ccfcd61e804a97fa30fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f5a357e468b6ed626beb2bb7a4f9be2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df6aa3f3dfca79ea441ce4de2aa07ce3 = $(`<div id="html_df6aa3f3dfca79ea441ce4de2aa07ce3" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_7f5a357e468b6ed626beb2bb7a4f9be2.setContent(html_df6aa3f3dfca79ea441ce4de2aa07ce3);
+            
+        
+
+        marker_cce9c2361d50500025e017f113a1a9b9.bindPopup(popup_7f5a357e468b6ed626beb2bb7a4f9be2)
+        ;
+
+        
+    
+    
+                marker_cce9c2361d50500025e017f113a1a9b9.setIcon(icon_95b644308f67ccfcd61e804a97fa30fa);
+            
+    
+            var marker_03a91f368cef89017c1d9139a5de6fa4 = L.marker(
+                [40.461528, -3.591222],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_28447d72b3e73bbbdbce90a21d90a97e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9c3882518619c50f02a901d3557877f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0deab52d7ae27c45c0c3e3f36143d85a = $(`<div id="html_0deab52d7ae27c45c0c3e3f36143d85a" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_f9c3882518619c50f02a901d3557877f.setContent(html_0deab52d7ae27c45c0c3e3f36143d85a);
+            
+        
+
+        marker_03a91f368cef89017c1d9139a5de6fa4.bindPopup(popup_f9c3882518619c50f02a901d3557877f)
+        ;
+
+        
+    
+    
+                marker_03a91f368cef89017c1d9139a5de6fa4.setIcon(icon_28447d72b3e73bbbdbce90a21d90a97e);
+            
+    
+            var marker_47070e0c74ac7f9f1aa66df71f89614f = L.marker(
+                [40.404722, -3.681917],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_edcd19a79b74580d1a359308aa138e01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c60995d78fb86e63bfc9b44953aa3da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d859997fce0941ad989ac710f19c422 = $(`<div id="html_0d859997fce0941ad989ac710f19c422" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_8c60995d78fb86e63bfc9b44953aa3da.setContent(html_0d859997fce0941ad989ac710f19c422);
+            
+        
+
+        marker_47070e0c74ac7f9f1aa66df71f89614f.bindPopup(popup_8c60995d78fb86e63bfc9b44953aa3da)
+        ;
+
+        
+    
+    
+                marker_47070e0c74ac7f9f1aa66df71f89614f.setIcon(icon_edcd19a79b74580d1a359308aa138e01);
+            
+    
+            var marker_b6993412381e18f816ef18598ef2506d = L.marker(
+                [40.35014532098149, -3.703315],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_bcd00f18466c6d9ded85e3284fa4b1b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7986c85a0a952859aebffa5cf8e9f32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30fd71baf6f61d626ee02ef66c999b59 = $(`<div id="html_30fd71baf6f61d626ee02ef66c999b59" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_c7986c85a0a952859aebffa5cf8e9f32.setContent(html_30fd71baf6f61d626ee02ef66c999b59);
+            
+        
+
+        marker_b6993412381e18f816ef18598ef2506d.bindPopup(popup_c7986c85a0a952859aebffa5cf8e9f32)
+        ;
+
+        
+    
+    
+                marker_b6993412381e18f816ef18598ef2506d.setIcon(icon_bcd00f18466c6d9ded85e3284fa4b1b8);
+            
+    
+            var marker_b724f9dcf83eeb3f74bc2d0d3bc65349 = L.marker(
+                [40.3954465972213, -3.695639],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_d3b8355af9a95f111c4a63b89cfe6725 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46299328a29c5ffa47cfc394824bfaec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f33863fe7e13c3b4ea48bc3f27caff1b = $(`<div id="html_f33863fe7e13c3b4ea48bc3f27caff1b" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_46299328a29c5ffa47cfc394824bfaec.setContent(html_f33863fe7e13c3b4ea48bc3f27caff1b);
+            
+        
+
+        marker_b724f9dcf83eeb3f74bc2d0d3bc65349.bindPopup(popup_46299328a29c5ffa47cfc394824bfaec)
+        ;
+
+        
+    
+    
+                marker_b724f9dcf83eeb3f74bc2d0d3bc65349.setIcon(icon_d3b8355af9a95f111c4a63b89cfe6725);
+            
+    
+            var marker_4fcf55f565cb46225606aceac0ccdeb9 = L.marker(
+                [40.437639, -3.63875],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_898c67413299f5d57301cc17f40ce320 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7464dea755c3816ae32f30e521c6309 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_627f6cb1ca6bfc5637e194e3cf5ecd2d = $(`<div id="html_627f6cb1ca6bfc5637e194e3cf5ecd2d" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_f7464dea755c3816ae32f30e521c6309.setContent(html_627f6cb1ca6bfc5637e194e3cf5ecd2d);
+            
+        
+
+        marker_4fcf55f565cb46225606aceac0ccdeb9.bindPopup(popup_f7464dea755c3816ae32f30e521c6309)
+        ;
+
+        
+    
+    
+                marker_4fcf55f565cb46225606aceac0ccdeb9.setIcon(icon_898c67413299f5d57301cc17f40ce320);
+            
+    
+            var marker_84ccec9f7f60867bec8b4c5aaa466a30 = L.marker(
+                [40.43741804382731, -3.6904],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_53b7f113c5c78bf4635112d71545a973 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d847bb3473d6a33d531b3ef10ccafbf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_054982f5a332a46cb0dd635b92fc8124 = $(`<div id="html_054982f5a332a46cb0dd635b92fc8124" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_d847bb3473d6a33d531b3ef10ccafbf3.setContent(html_054982f5a332a46cb0dd635b92fc8124);
+            
+        
+
+        marker_84ccec9f7f60867bec8b4c5aaa466a30.bindPopup(popup_d847bb3473d6a33d531b3ef10ccafbf3)
+        ;
+
+        
+    
+    
+                marker_84ccec9f7f60867bec8b4c5aaa466a30.setIcon(icon_53b7f113c5c78bf4635112d71545a973);
+            
+    
+            var marker_3bbd0dae3703bd4b490bec8555fd28fd = L.marker(
+                [40.447222, -3.708889],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_be7d1165a2b274096eaa6d947cd44543 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a02800aab89a91ea2b2c7ae6f0d34f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7778cf9a4260309ad51c72cfe0e02af = $(`<div id="html_b7778cf9a4260309ad51c72cfe0e02af" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_4a02800aab89a91ea2b2c7ae6f0d34f3.setContent(html_b7778cf9a4260309ad51c72cfe0e02af);
+            
+        
+
+        marker_3bbd0dae3703bd4b490bec8555fd28fd.bindPopup(popup_4a02800aab89a91ea2b2c7ae6f0d34f3)
+        ;
+
+        
+    
+    
+                marker_3bbd0dae3703bd4b490bec8555fd28fd.setIcon(icon_be7d1165a2b274096eaa6d947cd44543);
+            
+    
+            var marker_4f0b30fc9e91b7e2acd689b2dbb647ec = L.marker(
+                [40.478583, -3.707917],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_adac10ebec189f530b92f3e8363f7999 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f75d8c41d9ad3639907be6f73500784e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb01b1c4d63109d5f40259bafa15d2ff = $(`<div id="html_cb01b1c4d63109d5f40259bafa15d2ff" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_f75d8c41d9ad3639907be6f73500784e.setContent(html_cb01b1c4d63109d5f40259bafa15d2ff);
+            
+        
+
+        marker_4f0b30fc9e91b7e2acd689b2dbb647ec.bindPopup(popup_f75d8c41d9ad3639907be6f73500784e)
+        ;
+
+        
+    
+    
+                marker_4f0b30fc9e91b7e2acd689b2dbb647ec.setIcon(icon_adac10ebec189f530b92f3e8363f7999);
+            
+    
+            var marker_fa35bcfc1536cf04aa259275b6c759fe = L.marker(
+                [40.4678456939681, -3.689222],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_dc914b52b39cc04cac1ebbe0ef09db2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_622fc98882122a867fff6ac57edf17c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93c05650f5755a9f032d1eb05986e70b = $(`<div id="html_93c05650f5755a9f032d1eb05986e70b" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_622fc98882122a867fff6ac57edf17c7.setContent(html_93c05650f5755a9f032d1eb05986e70b);
+            
+        
+
+        marker_fa35bcfc1536cf04aa259275b6c759fe.bindPopup(popup_622fc98882122a867fff6ac57edf17c7)
+        ;
+
+        
+    
+    
+                marker_fa35bcfc1536cf04aa259275b6c759fe.setIcon(icon_dc914b52b39cc04cac1ebbe0ef09db2a);
+            
+    
+            var marker_65338b324a6a6df1bb3c744bcc62aecd = L.marker(
+                [40.491139, -3.685889],
+                {
+}
+            ).addTo(feature_group_a5a78325a84646bcd4f1ff511cab1aa2);
+        
+    
+            var icon_530a31b69b98a256f54410557b3e2e1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_168604199f0ff8ebd3fc25f599348bea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4a791dd81f51b521d466b5f9cee27d7 = $(`<div id="html_f4a791dd81f51b521d466b5f9cee27d7" style="width: 100.0%; height: 100.0%;">Cámara de tráfico</div>`)[0];
+                popup_168604199f0ff8ebd3fc25f599348bea.setContent(html_f4a791dd81f51b521d466b5f9cee27d7);
+            
+        
+
+        marker_65338b324a6a6df1bb3c744bcc62aecd.bindPopup(popup_168604199f0ff8ebd3fc25f599348bea)
+        ;
+
+        
+    
+    
+                marker_65338b324a6a6df1bb3c744bcc62aecd.setIcon(icon_530a31b69b98a256f54410557b3e2e1a);
+            
+    
+            feature_group_a5a78325a84646bcd4f1ff511cab1aa2.addTo(map_a9cf1f314a7a841c7d75862e0a618b4b);
+        
+    
+            var feature_group_b68ef66f490982c4c4f34dc3262eff4d = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b47835ffb8cc8189a78a5e2c3b3d8299 = L.marker(
+                [40.4238823, -3.7122567],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_e895bf2bcae6e95cfaf2a99efe4d0868 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eab5e00f47c3025635cbacf7d66756cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a97f4101be15494377fcb3487da5b10 = $(`<div id="html_1a97f4101be15494377fcb3487da5b10" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 4 (Plaza de España)</div>`)[0];
+                popup_eab5e00f47c3025635cbacf7d66756cb.setContent(html_1a97f4101be15494377fcb3487da5b10);
+            
+        
+
+        marker_b47835ffb8cc8189a78a5e2c3b3d8299.bindPopup(popup_eab5e00f47c3025635cbacf7d66756cb)
+        ;
+
+        
+    
+    
+                marker_b47835ffb8cc8189a78a5e2c3b3d8299.setIcon(icon_e895bf2bcae6e95cfaf2a99efe4d0868);
+            
+    
+            var marker_37a74a56d1217ef78bb888a4e77e40d1 = L.marker(
+                [40.4215533, -3.6823158],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_ee120d02fa3fc8539b2fe495765a7df2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66ea2f12fff99a8f192a088fbb9e83c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3bf7dd297c9507367aa915faf2b0ee4 = $(`<div id="html_d3bf7dd297c9507367aa915faf2b0ee4" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 8 (Escuelas Aguirre)</div>`)[0];
+                popup_66ea2f12fff99a8f192a088fbb9e83c6.setContent(html_d3bf7dd297c9507367aa915faf2b0ee4);
+            
+        
+
+        marker_37a74a56d1217ef78bb888a4e77e40d1.bindPopup(popup_66ea2f12fff99a8f192a088fbb9e83c6)
+        ;
+
+        
+    
+    
+                marker_37a74a56d1217ef78bb888a4e77e40d1.setIcon(icon_ee120d02fa3fc8539b2fe495765a7df2);
+            
+    
+            var marker_e16744b5b1e4aec690ac639064a82fc6 = L.marker(
+                [40.4514734, -3.6773491],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_a45b106d811b14777e109afed59bd9c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19dc3ab686ec64fc9284226c32e59e85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fb2029f3b8bb675af3f5d9d8ddb3ea7 = $(`<div id="html_8fb2029f3b8bb675af3f5d9d8ddb3ea7" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 11 (Ramón y Cajal)</div>`)[0];
+                popup_19dc3ab686ec64fc9284226c32e59e85.setContent(html_8fb2029f3b8bb675af3f5d9d8ddb3ea7);
+            
+        
+
+        marker_e16744b5b1e4aec690ac639064a82fc6.bindPopup(popup_19dc3ab686ec64fc9284226c32e59e85)
+        ;
+
+        
+    
+    
+                marker_e16744b5b1e4aec690ac639064a82fc6.setIcon(icon_a45b106d811b14777e109afed59bd9c4);
+            
+    
+            var marker_58b592282129fd55dca4b8b46fb47e2d = L.marker(
+                [40.4400457, -3.6392422],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_2c9dd998a1e2e47afd4b8073cca21dc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b10f12e5070f1795fc5b55880f359d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d7d3c49dabdf0f2fdc367ccb2c5ba0d = $(`<div id="html_5d7d3c49dabdf0f2fdc367ccb2c5ba0d" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 16 (Arturo Soria)</div>`)[0];
+                popup_8b10f12e5070f1795fc5b55880f359d3.setContent(html_5d7d3c49dabdf0f2fdc367ccb2c5ba0d);
+            
+        
+
+        marker_58b592282129fd55dca4b8b46fb47e2d.bindPopup(popup_8b10f12e5070f1795fc5b55880f359d3)
+        ;
+
+        
+    
+    
+                marker_58b592282129fd55dca4b8b46fb47e2d.setIcon(icon_2c9dd998a1e2e47afd4b8073cca21dc5);
+            
+    
+            var marker_33a535740203149970cd774192fb542c = L.marker(
+                [40.347147, -3.7133167],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_94d14b5ef4ac4865ef39e0aaadaa05da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac91d69da1a6f6d0b0a34c98b6658bdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8a9b140ca0c414319b56927086e4e66 = $(`<div id="html_d8a9b140ca0c414319b56927086e4e66" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 17 (Villaverde)</div>`)[0];
+                popup_ac91d69da1a6f6d0b0a34c98b6658bdd.setContent(html_d8a9b140ca0c414319b56927086e4e66);
+            
+        
+
+        marker_33a535740203149970cd774192fb542c.bindPopup(popup_ac91d69da1a6f6d0b0a34c98b6658bdd)
+        ;
+
+        
+    
+    
+                marker_33a535740203149970cd774192fb542c.setIcon(icon_94d14b5ef4ac4865ef39e0aaadaa05da);
+            
+    
+            var marker_a07b498be3ee26415bd15b10f20c2efc = L.marker(
+                [40.3947825, -3.7318356],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_b292ac45b92d60c88424223515c39df5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ce969fbfdcd0d637d193b6b3b4e30b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80fc2bb559bdcc6bb2abcd442a59d308 = $(`<div id="html_80fc2bb559bdcc6bb2abcd442a59d308" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 18 (Farolillo)</div>`)[0];
+                popup_2ce969fbfdcd0d637d193b6b3b4e30b1.setContent(html_80fc2bb559bdcc6bb2abcd442a59d308);
+            
+        
+
+        marker_a07b498be3ee26415bd15b10f20c2efc.bindPopup(popup_2ce969fbfdcd0d637d193b6b3b4e30b1)
+        ;
+
+        
+    
+    
+                marker_a07b498be3ee26415bd15b10f20c2efc.setIcon(icon_b292ac45b92d60c88424223515c39df5);
+            
+    
+            var marker_42fe244a0b12dfdbb1a55b575583baeb = L.marker(
+                [40.4193577, -3.7473445],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_8437f57a420d87fe970174a19d2d210e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7648d06e763fd02244214a82fa462a78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3ea560f7e2dd90f5bccdc2ed6f2dbde = $(`<div id="html_e3ea560f7e2dd90f5bccdc2ed6f2dbde" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 24 (Casa de Campo)</div>`)[0];
+                popup_7648d06e763fd02244214a82fa462a78.setContent(html_e3ea560f7e2dd90f5bccdc2ed6f2dbde);
+            
+        
+
+        marker_42fe244a0b12dfdbb1a55b575583baeb.bindPopup(popup_7648d06e763fd02244214a82fa462a78)
+        ;
+
+        
+    
+    
+                marker_42fe244a0b12dfdbb1a55b575583baeb.setIcon(icon_8437f57a420d87fe970174a19d2d210e);
+            
+    
+            var marker_1783b9796813ab37ea9c864e08152e5d = L.marker(
+                [40.4769179, -3.5800258],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_f37e7c3efe20409809c41109b170936c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e09e86452d5e1814b0111e25b0e67f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a232944cec57f1befa890216a6af7f33 = $(`<div id="html_a232944cec57f1befa890216a6af7f33" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 27 (Barajas Pueblo)</div>`)[0];
+                popup_7e09e86452d5e1814b0111e25b0e67f3.setContent(html_a232944cec57f1befa890216a6af7f33);
+            
+        
+
+        marker_1783b9796813ab37ea9c864e08152e5d.bindPopup(popup_7e09e86452d5e1814b0111e25b0e67f3)
+        ;
+
+        
+    
+    
+                marker_1783b9796813ab37ea9c864e08152e5d.setIcon(icon_f37e7c3efe20409809c41109b170936c);
+            
+    
+            var marker_39d9a2fed0840cf723415b21b6376ef6 = L.marker(
+                [40.4192091, -3.7031662],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_f62f00d2f3424a3d98591adfc5ecb938 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40d3e9cffb34b7a5484e068dc8fb81b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82fdfd108648bdbdd09faef989d952e6 = $(`<div id="html_82fdfd108648bdbdd09faef989d952e6" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 35 (Plaza del Carmen)</div>`)[0];
+                popup_40d3e9cffb34b7a5484e068dc8fb81b1.setContent(html_82fdfd108648bdbdd09faef989d952e6);
+            
+        
+
+        marker_39d9a2fed0840cf723415b21b6376ef6.bindPopup(popup_40d3e9cffb34b7a5484e068dc8fb81b1)
+        ;
+
+        
+    
+    
+                marker_39d9a2fed0840cf723415b21b6376ef6.setIcon(icon_f62f00d2f3424a3d98591adfc5ecb938);
+            
+    
+            var marker_7712771a336266af2bb017de3e81c994 = L.marker(
+                [40.4079517, -3.6453104],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_ff19dba6282b216b3fd479dcf0429b9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_178f26b6cf9929c9ebb850c39c29fd40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53a7159a79fe75ca7ce63444aa463004 = $(`<div id="html_53a7159a79fe75ca7ce63444aa463004" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 36 (Moratalaz)</div>`)[0];
+                popup_178f26b6cf9929c9ebb850c39c29fd40.setContent(html_53a7159a79fe75ca7ce63444aa463004);
+            
+        
+
+        marker_7712771a336266af2bb017de3e81c994.bindPopup(popup_178f26b6cf9929c9ebb850c39c29fd40)
+        ;
+
+        
+    
+    
+                marker_7712771a336266af2bb017de3e81c994.setIcon(icon_ff19dba6282b216b3fd479dcf0429b9c);
+            
+    
+            var marker_9403c65150ebaa645508f5b22f731f15 = L.marker(
+                [40.4455439, -3.7071303],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_cc40413c347b6abe9cd3e6bd27cb84c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f6d5e1b8fce766a54749924c25cc3c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_038a3eabb8ba78f098c4f92bcf07c631 = $(`<div id="html_038a3eabb8ba78f098c4f92bcf07c631" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 38 (Cuatro Caminos)</div>`)[0];
+                popup_6f6d5e1b8fce766a54749924c25cc3c3.setContent(html_038a3eabb8ba78f098c4f92bcf07c631);
+            
+        
+
+        marker_9403c65150ebaa645508f5b22f731f15.bindPopup(popup_6f6d5e1b8fce766a54749924c25cc3c3)
+        ;
+
+        
+    
+    
+                marker_9403c65150ebaa645508f5b22f731f15.setIcon(icon_cc40413c347b6abe9cd3e6bd27cb84c1);
+            
+    
+            var marker_b96e3bd1813391dfbb069640bef3d58b = L.marker(
+                [40.4782322, -3.7115364],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_4fa3b68ab6fede436edb9958b73c6ca9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70d90608c70080a834b7f636f0b8195e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b263e11ab37cd7b3f54f0886c205c64 = $(`<div id="html_4b263e11ab37cd7b3f54f0886c205c64" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 39 (Barrio del Pilar)</div>`)[0];
+                popup_70d90608c70080a834b7f636f0b8195e.setContent(html_4b263e11ab37cd7b3f54f0886c205c64);
+            
+        
+
+        marker_b96e3bd1813391dfbb069640bef3d58b.bindPopup(popup_70d90608c70080a834b7f636f0b8195e)
+        ;
+
+        
+    
+    
+                marker_b96e3bd1813391dfbb069640bef3d58b.setIcon(icon_4fa3b68ab6fede436edb9958b73c6ca9);
+            
+    
+            var marker_cf38d3749ed1e246bec170fe205ad522 = L.marker(
+                [40.3881478, -3.6515286],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_ffeae5fa9b517409d686a27a60dad5cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7527a128e46a3a2823682d75265c2527 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_822007a57f2928a29bd9ce1fdb3012e7 = $(`<div id="html_822007a57f2928a29bd9ce1fdb3012e7" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 40 (Vallecas)</div>`)[0];
+                popup_7527a128e46a3a2823682d75265c2527.setContent(html_822007a57f2928a29bd9ce1fdb3012e7);
+            
+        
+
+        marker_cf38d3749ed1e246bec170fe205ad522.bindPopup(popup_7527a128e46a3a2823682d75265c2527)
+        ;
+
+        
+    
+    
+                marker_cf38d3749ed1e246bec170fe205ad522.setIcon(icon_ffeae5fa9b517409d686a27a60dad5cd);
+            
+    
+            var marker_c94d3abcc3d4c335ae0e4f79477f3dba = L.marker(
+                [40.3980991, -3.6868138],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_414d9d76e150e8932da9e27771c2702d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec6bd7d7bdfb249d7d8ffb365ecd9584 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44958f2ca27e622d2d6e0357f80d4191 = $(`<div id="html_44958f2ca27e622d2d6e0357f80d4191" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 47 (Méndez Álvaro)</div>`)[0];
+                popup_ec6bd7d7bdfb249d7d8ffb365ecd9584.setContent(html_44958f2ca27e622d2d6e0357f80d4191);
+            
+        
+
+        marker_c94d3abcc3d4c335ae0e4f79477f3dba.bindPopup(popup_ec6bd7d7bdfb249d7d8ffb365ecd9584)
+        ;
+
+        
+    
+    
+                marker_c94d3abcc3d4c335ae0e4f79477f3dba.setIcon(icon_414d9d76e150e8932da9e27771c2702d);
+            
+    
+            var marker_f5e994ba4ead1373fd0c7611cb14e9da = L.marker(
+                [40.4398904, -3.6903729],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_ed1c0fb83ded9edbbc14b7df3b4c21ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb9c86446c674d81f3cc23a719483e11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bca6aa3b26d8601bc649a952b4acdaf0 = $(`<div id="html_bca6aa3b26d8601bc649a952b4acdaf0" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 48 (Castellana)</div>`)[0];
+                popup_cb9c86446c674d81f3cc23a719483e11.setContent(html_bca6aa3b26d8601bc649a952b4acdaf0);
+            
+        
+
+        marker_f5e994ba4ead1373fd0c7611cb14e9da.bindPopup(popup_cb9c86446c674d81f3cc23a719483e11)
+        ;
+
+        
+    
+    
+                marker_f5e994ba4ead1373fd0c7611cb14e9da.setIcon(icon_ed1c0fb83ded9edbbc14b7df3b4c21ee);
+            
+    
+            var marker_cc1377c22daf261b7e83467d52d08d7f = L.marker(
+                [40.4144444, -3.6824999],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_32664c25ff84e55925ca86d5a43cb10e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79d8101055d77648d1e187ff476a0e4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caf02ee9c81f7c6dbaf7121a1c23a5ec = $(`<div id="html_caf02ee9c81f7c6dbaf7121a1c23a5ec" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 49 (Parque del Retiro)</div>`)[0];
+                popup_79d8101055d77648d1e187ff476a0e4d.setContent(html_caf02ee9c81f7c6dbaf7121a1c23a5ec);
+            
+        
+
+        marker_cc1377c22daf261b7e83467d52d08d7f.bindPopup(popup_79d8101055d77648d1e187ff476a0e4d)
+        ;
+
+        
+    
+    
+                marker_cc1377c22daf261b7e83467d52d08d7f.setIcon(icon_32664c25ff84e55925ca86d5a43cb10e);
+            
+    
+            var marker_3a7717916ee483a576e15b8f50087def = L.marker(
+                [40.4655841, -3.6887449],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_b232f5b786d91b52acb0259a502ecfcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd99d3457033322770e3fc5426300968 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87f6b8b16bbbfc8ae343a7fd87789362 = $(`<div id="html_87f6b8b16bbbfc8ae343a7fd87789362" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 50 (Plaza Castilla)</div>`)[0];
+                popup_fd99d3457033322770e3fc5426300968.setContent(html_87f6b8b16bbbfc8ae343a7fd87789362);
+            
+        
+
+        marker_3a7717916ee483a576e15b8f50087def.bindPopup(popup_fd99d3457033322770e3fc5426300968)
+        ;
+
+        
+    
+    
+                marker_3a7717916ee483a576e15b8f50087def.setIcon(icon_b232f5b786d91b52acb0259a502ecfcb);
+            
+    
+            var marker_89f71ab0c11a593bfd8a773dbfb340b6 = L.marker(
+                [40.3730118, -3.6121394],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_e1e8507605e460f41337df36d57a4b29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7584b76693fffa81338f28851ff2caf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a36e4b16d0b2b58bb7362f979fb353f2 = $(`<div id="html_a36e4b16d0b2b58bb7362f979fb353f2" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 54 (Ensanche de Vallecas)</div>`)[0];
+                popup_7584b76693fffa81338f28851ff2caf8.setContent(html_a36e4b16d0b2b58bb7362f979fb353f2);
+            
+        
+
+        marker_89f71ab0c11a593bfd8a773dbfb340b6.bindPopup(popup_7584b76693fffa81338f28851ff2caf8)
+        ;
+
+        
+    
+    
+                marker_89f71ab0c11a593bfd8a773dbfb340b6.setIcon(icon_e1e8507605e460f41337df36d57a4b29);
+            
+    
+            var marker_60e09c02d477e10e781802eb32ab5109 = L.marker(
+                [40.4623628, -3.5805649],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_0ceba19efc8225c9a33b920fc46410be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e10bba25caf1d4f9fdaa120489b8d0b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6262a491e30a76380e230f83373d9eba = $(`<div id="html_6262a491e30a76380e230f83373d9eba" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 55 (Urb. Embajada)</div>`)[0];
+                popup_e10bba25caf1d4f9fdaa120489b8d0b3.setContent(html_6262a491e30a76380e230f83373d9eba);
+            
+        
+
+        marker_60e09c02d477e10e781802eb32ab5109.bindPopup(popup_e10bba25caf1d4f9fdaa120489b8d0b3)
+        ;
+
+        
+    
+    
+                marker_60e09c02d477e10e781802eb32ab5109.setIcon(icon_0ceba19efc8225c9a33b920fc46410be);
+            
+    
+            var marker_c956d453b68f336299c9319b47649c7d = L.marker(
+                [40.3850336, -3.7187679],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_6e1b03e581f5d30e48c4ef5cced8b9f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69d8f2729976ac50cee38f14f9cb5bf6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e06b00dce97a66c2ea6db43c0333cf1b = $(`<div id="html_e06b00dce97a66c2ea6db43c0333cf1b" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 56 (Plaza Elíptica)</div>`)[0];
+                popup_69d8f2729976ac50cee38f14f9cb5bf6.setContent(html_e06b00dce97a66c2ea6db43c0333cf1b);
+            
+        
+
+        marker_c956d453b68f336299c9319b47649c7d.bindPopup(popup_69d8f2729976ac50cee38f14f9cb5bf6)
+        ;
+
+        
+    
+    
+                marker_c956d453b68f336299c9319b47649c7d.setIcon(icon_6e1b03e581f5d30e48c4ef5cced8b9f2);
+            
+    
+            var marker_c8508553892da5e41d82b290be6999f1 = L.marker(
+                [40.4942012, -3.6605173],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_10340f57883dcd6c46b80d014ac8da39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de6265cc6c42e05e05fe46cd98e43887 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea37ce7d372f27944501a10073bf632a = $(`<div id="html_ea37ce7d372f27944501a10073bf632a" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 57 (Sanchinarro)</div>`)[0];
+                popup_de6265cc6c42e05e05fe46cd98e43887.setContent(html_ea37ce7d372f27944501a10073bf632a);
+            
+        
+
+        marker_c8508553892da5e41d82b290be6999f1.bindPopup(popup_de6265cc6c42e05e05fe46cd98e43887)
+        ;
+
+        
+    
+    
+                marker_c8508553892da5e41d82b290be6999f1.setIcon(icon_10340f57883dcd6c46b80d014ac8da39);
+            
+    
+            var marker_0fa3e7e2822697222338335ec92a5348 = L.marker(
+                [40.465144, -3.609031],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_b325922c4e276ee1d5bb0e1376637245 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7ff440b005706aa55ef9058ed93d4441 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c91106148ec97353cbdc6f0e03eca4a = $(`<div id="html_8c91106148ec97353cbdc6f0e03eca4a" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 59 (Juan Carlos I)</div>`)[0];
+                popup_7ff440b005706aa55ef9058ed93d4441.setContent(html_8c91106148ec97353cbdc6f0e03eca4a);
+            
+        
+
+        marker_0fa3e7e2822697222338335ec92a5348.bindPopup(popup_7ff440b005706aa55ef9058ed93d4441)
+        ;
+
+        
+    
+    
+                marker_0fa3e7e2822697222338335ec92a5348.setIcon(icon_b325922c4e276ee1d5bb0e1376637245);
+            
+    
+            var marker_cfa26ac498232405f238693f016b066c = L.marker(
+                [40.5005477, -3.6897308],
+                {
+}
+            ).addTo(feature_group_b68ef66f490982c4c4f34dc3262eff4d);
+        
+    
+            var icon_f1b270ebddb1ef195852f3ce5a624a27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "cloud",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_caffd9c28756e2572bf108bf2134a8e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0de1471ec922994f411fb2d2ff46e4ab = $(`<div id="html_0de1471ec922994f411fb2d2ff46e4ab" style="width: 100.0%; height: 100.0%;">Estación Código Corto: 60 (Tres Olivos)</div>`)[0];
+                popup_caffd9c28756e2572bf108bf2134a8e3.setContent(html_0de1471ec922994f411fb2d2ff46e4ab);
+            
+        
+
+        marker_cfa26ac498232405f238693f016b066c.bindPopup(popup_caffd9c28756e2572bf108bf2134a8e3)
+        ;
+
+        
+    
+    
+                marker_cfa26ac498232405f238693f016b066c.setIcon(icon_f1b270ebddb1ef195852f3ce5a624a27);
+            
+    
+            feature_group_b68ef66f490982c4c4f34dc3262eff4d.addTo(map_a9cf1f314a7a841c7d75862e0a618b4b);
+        
+    
+            var layer_control_a57f8dd9d79f4a1b9137d2ab240472de_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_be7f9c7b088b9b5d6dbdeb39937e12d6,
+                },
+                overlays :  {
+                    "C\u00e1maras de Tr\u00e1fico" : feature_group_a5a78325a84646bcd4f1ff511cab1aa2,
+                    "Estaciones de Medida" : feature_group_b68ef66f490982c4c4f34dc3262eff4d,
+                },
+            };
+            let layer_control_a57f8dd9d79f4a1b9137d2ab240472de = L.control.layers(
+                layer_control_a57f8dd9d79f4a1b9137d2ab240472de_layers.base_layers,
+                layer_control_a57f8dd9d79f4a1b9137d2ab240472de_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a9cf1f314a7a841c7d75862e0a618b4b);
+
+        
+</script>
+</html>
